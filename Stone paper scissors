@@ -1,0 +1,72 @@
+import random
+import time
+print("WELCOME TO STONE, PAPER, SCISSORS!!!")
+time.sleep(1)
+print()
+print("Enter your choice as stone, paper or scissors")
+time.sleep(1)
+print()
+
+a=str(input("Enter the player's name:"))
+count_1=0
+count_2=0
+while count_1<5 and count_2<5:
+    print()
+    c=input("Enter your choice:")
+    b=random.randint(1,3)
+    time.sleep(1)
+    if b==1:
+        time.sleep(1)
+        print("Computer has chosen paper")
+        if c=="stone" and b==1:
+            print("Computer has won")
+            count_2+=1
+            print("Current score of", a, "is:", count_1)
+            print("Current score of Computer is:", count_2)
+        elif c=="paper" and b==1:
+            print("It's a tie")
+            print("Current score of", a, "is:", count_1)
+            print("Current score of Computer is:", count_2)
+        elif c=="scissors" and b==1:
+            print("You have won")
+            count_1+=1
+            print("Current score of", a, "is:", count_1)
+            print("Current score of Computer is:", count_2)
+    elif b==2:
+        time.sleep(1)
+        print("Computer has chosen stone")
+        if c=="stone" and b==2:
+            print("It's a tie")
+            print("Current score of", a, "is:", count_1)
+            print("Current score of Computer is:", count_2)
+        elif c=="paper" and b==2:
+            print("You have won")
+            count_1+=1
+            print("Current score of", a, "is:", count_1)
+            print("Current score of Computer is:", count_2)
+        elif c=="scissors" and b==2:
+            print("Computer has won")
+            count_2+=1
+            print("Current score of", a, "is:", count_1)
+            print("Current score of Computer is:", count_2)
+    elif b==3:
+        time.sleep(1)
+        print("Computer has chosen scissors")
+        if c=="stone" and b==3:
+            print("You have won")
+            count_1+=1
+            print("Current score of", a, "is:", count_1)
+            print("Current score of Computer is:", count_2)
+        elif c=="paper" and b==3:
+            print("Computer has won")
+            count_2+=1
+            print("Current score of", a, "is:", count_1)
+            print("Current score of Computer is:", count_2)
+        elif c=="scissors" and b==3:
+            print("It's a tie")
+            print("Current score of", a, "is:", count_1)
+            print("Current score of Computer is:", count_2)
+if count_1==5:
+    print("Congo!!", a, "has won")
+else:
+    print("Computer has won......Better luck next time!!")
