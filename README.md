@@ -82,6 +82,12 @@ All records are permanently stored in MySQL database.
 
 ---
 
+## 🏗️ System Architecture
+
+![Library Management System Architecture](docs/architecture.png)
+
+---
+
 ## ⚙️ Installation
 
 ### 1. Clone Repository
